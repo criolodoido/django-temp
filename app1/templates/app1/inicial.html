@@ -1,3 +1,6 @@
-<h1>App 1</h1>
-<p><a href="{% url 'app2:app2' %}">Clique aqui para visitar a app 2 </a></p>
+{% extends "base.html" %}
 
+{% block content %}
+  <h1>App 1</h1>
+  <p><a href="{% url 'app2:app2' %}">Clique aqui para visitar a app 2 </a></p>
+{% endblock content %}
